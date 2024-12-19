@@ -86,7 +86,12 @@ return {
 			gopls = {},
 			pyright = {},
 			rust_analyzer = {},
-			ts_ls = {},
+			ts_ls = {
+				root_dir = require("lspconfig").util.root_pattern("package.json", ".git"),
+				settings = {
+					-- Any additional tsserver settings
+				},
+			},
 			tailwindcss = {},
 			lua_ls = {
 				settings = {
@@ -98,7 +103,6 @@ return {
 					},
 				},
 			},
-			java_language_server = {},
 		}
 
 		require("mason").setup()

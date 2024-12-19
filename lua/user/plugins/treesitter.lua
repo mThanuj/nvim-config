@@ -11,6 +11,7 @@ return {
 			"diff",
 			"prisma",
 			"go",
+			"java",
 			"javascript",
 			"tsx",
 			"typescript",
