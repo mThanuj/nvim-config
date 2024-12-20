@@ -44,3 +44,5 @@ end, { desc = "Next todo comment" })
 vim.keymap.set("n", "[t", function()
 	require("todo-comments").jump_prev()
 end, { desc = "Previous todo comment" })
+
+vim.keymap.set("n", "<leader>bt", "<CMD>Barbecue toggle<CR>", { desc = "Toggle Barbecue" })

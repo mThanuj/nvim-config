@@ -30,6 +30,10 @@ return {
 		local luasnip = require("luasnip")
 		luasnip.config.setup({})
 
+		cmp.config.formatting = {
+			format = require("tailwindcss-colorizer-cmp").formatter,
+		}
+
 		cmp.setup({
 			preselect = cmp.PreselectMode.None,
 			snippet = {
