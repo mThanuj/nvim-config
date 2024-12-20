@@ -15,7 +15,7 @@ return {
 	opts = {
 		notify_on_error = false,
 		format_on_save = function(bufnr)
-			local disable_filetypes = { c = false, cpp = false }
+			local disable_filetypes = {}
 			local lsp_format_opt
 			if disable_filetypes[vim.bo[bufnr].filetype] then
 				lsp_format_opt = "never"
@@ -32,10 +32,10 @@ return {
 			go = { "gofmt" },
 			css = { "prettier" },
 			python = { "isort", "black" },
-			javascript = { "prettierd", "prettier", stop_after_first = true },
-			javascriptreact = { "prettierd", "prettier", stop_after_first = true },
-			typescript = { "prettierd", "prettier", stop_after_first = true },
-			typescriptreact = { "prettierd", "prettier", stop_after_first = true },
+			javascript = { "prettier" },
+			typescript = { "prettier" },
+			javascriptreact = { "prettier" },
+			typescriptreact = { "prettier" },
 		},
 	},
 }

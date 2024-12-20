@@ -42,6 +42,8 @@ vim.opt.inccommand = "split"
 
 vim.opt.cursorline = true
 
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 12
 
 vim.o.guicursor = ""
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1

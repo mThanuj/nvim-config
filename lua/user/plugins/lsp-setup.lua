@@ -89,7 +89,7 @@ return {
 			ts_ls = {
 				root_dir = require("lspconfig").util.root_pattern("package.json", ".git"),
 				settings = {
-					-- Any additional tsserver settings
+					-- Any additional ts_ls settings
 				},
 			},
 			tailwindcss = {},
@@ -110,7 +110,6 @@ return {
 		local ensure_installed = vim.tbl_keys(servers or {})
 		vim.list_extend(ensure_installed, {
 			"prettier",
-			"prettierd",
 			"rustywind",
 			"black",
 			"isort",
