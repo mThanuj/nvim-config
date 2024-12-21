@@ -11,7 +11,6 @@ return {
 				return "make install_jsregexp"
 			end)(),
 			dependencies = {
-
 				{
 					"rafamadriz/friendly-snippets",
 					config = function()
@@ -21,7 +20,6 @@ return {
 			},
 		},
 		"saadparwaiz1/cmp_luasnip",
-
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-path",
 	},
